@@ -1,4 +1,4 @@
-name: zmk-component-cobalt
+name: zmk-keyboard-cobalt
 build:
   settings:
     board_root: .
