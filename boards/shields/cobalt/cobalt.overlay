@@ -52,7 +52,7 @@
             , <&gpio1 4 GPIO_ACTIVE_HIGH> // col6 F4 21
             , <&gpio0 11 GPIO_ACTIVE_HIGH> // col7 B6 10
             , <&gpio1 0 GPIO_ACTIVE_HIGH> // col8 D2 0
-            , <&gpio0 24 GPIO_ACTIVE_HIGH> // col9 D1 2
+            , <&gpio0 6 GPIO_ACTIVE_HIGH> // col9 D1 2
             ;
     };
 };
