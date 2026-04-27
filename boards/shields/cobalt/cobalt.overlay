@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "cobalt_layouts.dtsi"
+#include "cobalt-layouts.dtsi"
 
 / {
     chosen {
