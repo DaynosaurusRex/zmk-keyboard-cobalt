@@ -34,24 +34,25 @@
         diode-direction = "col2row";
 
         row-gpios
-            = <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row0 D0
-            , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row1 D4
-            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row2 C6
-            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row3 D7
-            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row4 E6
+            = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row0 D0 3
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row1 D4 4
+            , <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row2 C6 5
+            , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row3 D7 6
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row4 E6 7
+            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row5 ? ?
             ;
 
         col-gpios
-            = <&pro_micro 16 GPIO_ACTIVE_HIGH> // col0 B2
-            , <&pro_micro 14 GPIO_ACTIVE_HIGH> // col1 B3
-            , <&pro_micro 15 GPIO_ACTIVE_HIGH> // col2 B1
-            , <&pro_micro 18 GPIO_ACTIVE_HIGH> // col3 F7
-            , <&pro_micro 19 GPIO_ACTIVE_HIGH> // col4 F6
-            , <&pro_micro 20 GPIO_ACTIVE_HIGH> // col5 F5
-            , <&pro_micro 21 GPIO_ACTIVE_HIGH> // col6 F4
-            , <&pro_micro 10 GPIO_ACTIVE_HIGH> // col7 B6
-            , <&pro_micro 0 GPIO_ACTIVE_HIGH> // col8 D2
-            , <&pro_micro 2 GPIO_ACTIVE_HIGH> // col9 D1
+            = <&gpio0 8 GPIO_ACTIVE_HIGH> // col0 B2 16
+            , <&gpio0 17 GPIO_ACTIVE_HIGH> // col1 B3 14
+            , <&gpio0 20 GPIO_ACTIVE_HIGH> // col2 B1 15
+            , <&gpio0 22 GPIO_ACTIVE_HIGH> // col3 F7 18
+            , <&gpio0 24 GPIO_ACTIVE_HIGH> // col4 F6 19
+            , <&gpio1 6 GPIO_ACTIVE_HIGH> // col5 F5 20
+            , <&gpio1 4 GPIO_ACTIVE_HIGH> // col6 F4 21
+            , <&gpio0 11 GPIO_ACTIVE_HIGH> // col7 B6 10
+            , <&gpio1 0 GPIO_ACTIVE_HIGH> // col8 D2 0
+            , <&gpio0 24 GPIO_ACTIVE_HIGH> // col9 D1 2
             ;
     };
 };
